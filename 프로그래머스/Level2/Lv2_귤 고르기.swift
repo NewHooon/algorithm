@@ -8,7 +8,7 @@ func solution(_ k:Int, _ tangerine:[Int]) -> Int {
 
     for value in tangerine{
         if let number = countDictionary[value] {
-            countDictionary[value] = countDictionary[value]! + 1
+            countDictionary[value] = number + 1
         } else{
             countDictionary[value] = 1
             gArr.append(value)
